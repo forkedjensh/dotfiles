@@ -1,6 +1,28 @@
-.vimrc needs vundle to be installed
-===================================
+#####
+Notes
+#####
+
+Checkout this repository to your home directory and link all affected dot files in
+your home directory to the coresponding files in the dotfile directory.
+
+For example:
+
+- ``ln -s dotfiles/_vimrc ~/.vimrc``
+
+Vim
+===
+
+vimrc needs vundle to be installed
+----------------------------------
 
 ..
 
    $ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+Compile YCM components (MacOS X)
+--------------------------------
+
+..
+
+  $ cd ~/.vim/bundle/YouCompleteMe
+  $ ./install.sh --clang-completer --omnisharp-completer
