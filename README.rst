@@ -15,14 +15,10 @@ Vim
 vimrc needs vundle to be installed
 ----------------------------------
 
-..
-
-   $ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+- ``$ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim``
 
 Compile YCM components (MacOS X)
 --------------------------------
 
-..
-
-  $ cd ~/.vim/bundle/YouCompleteMe
-  $ ./install.sh --clang-completer --omnisharp-completer
+#. ``$ cd ~/.vim/bundle/YouCompleteMe``
+#. ``$ ./install.sh --clang-completer --omnisharp-completeri``
