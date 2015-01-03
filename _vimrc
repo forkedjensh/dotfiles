@@ -11,7 +11,6 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'klen/python-mode'
 Plugin 'bling/vim-airline'
 Plugin 'kien/ctrlp.vim'
-Plugin 'flazz/vim-colorschemes'
 Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'Rykka/riv.vim'
 Plugin 'SirVer/ultisnips'
@@ -19,6 +18,8 @@ Plugin 'honza/vim-snippets'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 Plugin 'rodjek/vim-puppet'
+Plugin 'majutsushi/tagbar'
+Plugin 'altercation/vim-colors-solarized'
 
 call vundle#end()
 
@@ -62,6 +63,11 @@ set textwidth=79
 set formatoptions=qrn1
 set colorcolumn=85
 
+" colorscheme
+let g:solarized_termcolors=256
+set background=light
+colorscheme solarized
+
 " Unprintable characters
 set list
 set listchars=tab:▸\ ,eol:¬
@@ -80,7 +86,6 @@ nnoremap k gk
 
 " Special things
 syntax on
-colorscheme lucius
 nnoremap <C-n> :bnext<CR>
 nnoremap <C-m> :bprevious<CR>
 au FocusLost * :wa
@@ -101,7 +106,7 @@ let g:airline#extensions#tabline#enabled = 1
 
 " Nerdtree
 map <F2> :NERDTreeToggle<CR>
-let g:NERDTreeWinPos = "right"
+" let g:NERDTreeWinPos = "right"
 
 " Do not use pymode for autocomplete
 let g:pymode_rope_completion = 0
