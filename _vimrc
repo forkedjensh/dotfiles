@@ -26,6 +26,9 @@ call vundle#end()
 filetype plugin indent on
 
 " The rest of your config follows here
+set encoding=utf8
+set termencoding=utf8
+set t_Co=256
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
@@ -65,8 +68,8 @@ set colorcolumn=85
 
 " colorscheme
 set guifont=Monaco\ for\ Powerline:h12
-let g:solarized_termcolors=256
-set background=dark
+let g:solarized_termcolors=16
+set background="dark"
 colorscheme solarized
 
 " Unprintable characters
@@ -100,9 +103,6 @@ augroup vimrc_autocmds
 augroup END
 
 " Airline
-if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-endif
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 
