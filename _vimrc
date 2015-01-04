@@ -20,6 +20,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'rodjek/vim-puppet'
 Plugin 'majutsushi/tagbar'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'tpope/vim-surround'
 
 call vundle#end()
 
