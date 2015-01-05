@@ -21,6 +21,7 @@ Plugin 'rodjek/vim-puppet'
 Plugin 'majutsushi/tagbar'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tpope/vim-surround'
+Plugin 'jmcantrell/vim-virtualenv'
 
 call vundle#end()
 
@@ -69,9 +70,9 @@ set colorcolumn=85
 
 " colorscheme
 set guifont=Monaco\ for\ Powerline:h12
-let g:solarized_termcolors=16
 set background="dark"
 colorscheme solarized
+so ~/.vim/bundle/vim-colors-solarized/autoload/togglebg.vim
 
 " Unprintable characters
 set list
