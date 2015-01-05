@@ -22,6 +22,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tpope/vim-surround'
 Plugin 'jmcantrell/vim-virtualenv'
+Plugin 'vim-scripts/TaskList.vim'
 
 call vundle#end()
 
