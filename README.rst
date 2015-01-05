@@ -21,7 +21,7 @@ Compile YCM components (MacOS X)
 --------------------------------
 
 #. ``$ cd ~/.vim/bundle/YouCompleteMe``
-#. ``$ ./install.sh --clang-completer --omnisharp-completeri``
+#. ``$ ./install.sh --clang-completer --omnisharp-completer``
 
 Font "Monaco for Powerline" needed (MacOS X)
 --------------------------------------------
