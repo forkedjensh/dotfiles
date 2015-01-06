@@ -100,6 +100,12 @@ nnoremap <leader>tl :TaskList<cr>
 nnoremap <leader>nt :NERDTreeToggle<cr>
 nnoremap <leader>bg :ToggleBG<cr>
 
+" Window movement
+noremap <C-h> <C-w>h
+noremap <C-j> <C-w>j
+noremap <C-k> <C-w>k
+noremap <C-l> <C-w>l
+
 " Special things
 syntax on
 nnoremap <C-n> :bnext<CR>
