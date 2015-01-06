@@ -71,7 +71,6 @@ set colorcolumn=85
 
 " colorscheme
 set guifont=Monaco\ for\ Powerline:h12
-set background="dark"
 colorscheme solarized
 so ~/.vim/bundle/vim-colors-solarized/autoload/togglebg.vim
 
@@ -99,6 +98,11 @@ nnoremap <leader>tb :Tagbar<cr>
 nnoremap <leader>tl :TaskList<cr>
 nnoremap <leader>nt :NERDTreeToggle<cr>
 nnoremap <leader>bg :ToggleBG<cr>
+
+" solve ycm ultisnips key mapping problem
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 " Window movement
 noremap <C-h> <C-w>h
