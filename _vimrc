@@ -52,7 +52,7 @@ set backspace=indent,eol,start
 set laststatus=2
 set relativenumber
 set undofile
-let mapleader = ","
+let mapleader = "ö"
 nnoremap / /\v
 vnoremap / /\v
 set ignorecase
@@ -91,6 +91,15 @@ inoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
 
+" Other shortcuts
+inoremap jk <esc>
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
+nnoremap <leader>tb :Tagbar<cr>
+nnoremap <leader>tl :TaskList<cr>
+nnoremap <leader>nt :NERDTreeToggle<cr>
+nnoremap <leader>bg :ToggleBG<cr>
+
 " Special things
 syntax on
 nnoremap <C-n> :bnext<CR>
@@ -108,10 +117,6 @@ augroup END
 " Airline
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
-
-" Nerdtree
-map <F2> :NERDTreeToggle<CR>
-" let g:NERDTreeWinPos = "right"
 
 " Do not use pymode for autocomplete
 let g:pymode_rope_completion = 0
