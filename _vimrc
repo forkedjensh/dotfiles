@@ -71,6 +71,7 @@ set colorcolumn=85
 
 " colorscheme
 set guifont=Monaco\ for\ Powerline:h12
+set background="dark"
 colorscheme solarized
 so ~/.vim/bundle/vim-colors-solarized/autoload/togglebg.vim
 
@@ -138,3 +139,6 @@ let g:tagbar_type_rst = {
     \ },
     \ 'sort': 0,
 \ }
+
+"UltiSnips
+let g:ultisnips_python_style="sphinx"
