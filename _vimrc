@@ -22,6 +22,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'tpope/vim-surround'
 Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'vim-scripts/TaskList.vim'
+Plugin 'tpope/vim-unimpaired'
 
 call vundle#end()
 
@@ -118,3 +119,22 @@ au FocusLost * :wa
 " Airline
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
+
+" Syntastic
+let g:syntastic_always_populate_loc_list = 1
+
+" rst support in tagbar
+let g:tagbar_type_rst = {
+    \ 'ctagstype': 'rst',
+    \ 'ctagsbin' : '$HOME/bin/rst2ctags.py',
+    \ 'ctagsargs' : '-f - --sort=yes',
+    \ 'kinds' : [
+        \ 's:sections',
+        \ 'i:images'
+    \ ],
+    \ 'sro' : '|',
+    \ 'kind2scope' : {
+        \ 's' : 'section',
+    \ },
+    \ 'sort': 0,
+\ }

@@ -23,6 +23,12 @@ Compile YCM components (MacOS X)
 #. ``$ cd ~/.vim/bundle/YouCompleteMe``
 #. ``$ ./install.sh --clang-completer --omnisharp-completer``
 
+reStructuredText support in vim Tagbar
+--------------------------------------
+
+Grab ``rst2ctags.py`` from `jszakmeister's Github Repo
+<https://github.com/jszakmeister/rst2ctags>`_ and copy it to  ``$HOME/bin``.
+
 Font "Monaco for Powerline" needed (MacOS X)
 --------------------------------------------
 
