@@ -142,3 +142,6 @@ let g:tagbar_type_rst = {
 
 "UltiSnips
 let g:ultisnips_python_style="sphinx"
+
+"text width for git commits is 72 characters
+autocmd Filetype gitcommit setlocal spell textwidth=72
