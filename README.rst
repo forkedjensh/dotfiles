@@ -17,7 +17,7 @@ vimrc needs vundle to be installed
 
 - ``$ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim``
 
-To install the Plugins afterwords run
+To install the Plugins afterwards run
 
 ``$ vim +PluginInstall +qall``
 
