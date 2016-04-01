@@ -16,3 +16,11 @@ compinit
 #prompt suse
 
 PS1='%m:%~ %n$ '
+
+# enable virtualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/develop
+source /usr/local/bin/virtualenvwrapper.sh
+
+# enable autoenv
+source /usr/local/opt/autoenv/activate.sh
