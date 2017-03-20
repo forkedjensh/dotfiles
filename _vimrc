@@ -29,6 +29,7 @@ call vundle#end()
 filetype plugin indent on
 
 " The rest of your config follows here
+set backup
 set encoding=utf8
 set termencoding=utf8
 set t_Co=256

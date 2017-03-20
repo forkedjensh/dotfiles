@@ -24,3 +24,7 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 # enable autoenv
 source /usr/local/opt/autoenv/activate.sh
+
+# diverse
+alias tmux="TERM=screen-256color-bce tmux"
+alias ls="ls -G"
