@@ -28,3 +28,6 @@ source /usr/local/opt/autoenv/activate.sh
 # diverse
 alias tmux="TERM=screen-256color-bce tmux"
 alias ls="ls -G"
+export PATH="/usr/local/sbin:$PATH"
+export EDITOR=/usr/local/bin/vim
+export VISUAL=/usr/local/bin/vim
