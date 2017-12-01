@@ -8,7 +8,8 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'kien/ctrlp.vim'
 Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'Rykka/riv.vim'
@@ -121,6 +122,8 @@ au FocusLost * :wa
 " Airline
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='solarized'
+let g:airline_solarized_bg='dark'
 
 " Syntastic
 let g:syntastic_always_populate_loc_list = 1
