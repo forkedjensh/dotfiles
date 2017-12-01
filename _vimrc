@@ -19,21 +19,27 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 Plugin 'rodjek/vim-puppet'
 Plugin 'majutsushi/tagbar'
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'lifepillar/vim-solarized8'
+Plugin 'morhetz/gruvbox'
 Plugin 'tpope/vim-surround'
 Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'vim-scripts/TaskList.vim'
 Plugin 'tpope/vim-unimpaired'
+Plugin 'Yggdroot/indentLine'
 
 call vundle#end()
 
 filetype plugin indent on
 
+" Truecolour
+let &t_8f = "\<Esc>[38:2:%lu:%lu:%lum"
+let &t_8b = "\<Esc>[48:2:%lu:%lu:%lum"
+set termguicolors
+
 " The rest of your config follows here
 set backup
 set encoding=utf8
 set termencoding=utf8
-set t_Co=256
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
@@ -52,7 +58,7 @@ set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
-set relativenumber
+set number relativenumber
 set undofile
 let mapleader = "ö"
 nnoremap / /\v
@@ -73,9 +79,9 @@ set colorcolumn=80
 
 " colorscheme
 set guifont=Monaco\ for\ Powerline:h12
-set background="dark"
-colorscheme solarized
-so ~/.vim/bundle/vim-colors-solarized/autoload/togglebg.vim
+set background=dark
+colorscheme solarized8
+"colorscheme gruvbox
 
 " Unprintable characters
 set list
@@ -100,7 +106,6 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 nnoremap <leader>tb :Tagbar<cr>
 nnoremap <leader>tl :TaskList<cr>
 nnoremap <leader>nt :NERDTreeToggle<cr>
-nnoremap <leader>bg :ToggleBG<cr>
 
 " solve ycm ultisnips key mapping problem
 let g:UltiSnipsExpandTrigger="<c-j>"
@@ -123,6 +128,7 @@ au FocusLost * :wa
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='solarized'
+"let g:airline_theme='gruvbox'
 let g:airline_solarized_bg='dark'
 
 " Syntastic
