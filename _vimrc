@@ -80,8 +80,8 @@ set colorcolumn=80
 " colorscheme
 set guifont=Monaco\ for\ Powerline:h12
 set background=dark
-colorscheme solarized8
-"colorscheme gruvbox
+"colorscheme solarized8
+colorscheme gruvbox
 
 " Unprintable characters
 set list
@@ -127,9 +127,9 @@ au FocusLost * :wa
 " Airline
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='solarized'
-"let g:airline_theme='gruvbox'
-let g:airline_solarized_bg='dark'
+"let g:airline_theme='solarized'
+let g:airline_theme='gruvbox'
+"let g:airline_solarized_bg='dark'
 
 " Syntastic
 let g:syntastic_always_populate_loc_list = 1
