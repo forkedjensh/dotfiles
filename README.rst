@@ -12,9 +12,10 @@ For example:
 Vim
 ===
 
-vimrc needs vundle to be installed
-----------------------------------
+Prerequisites
+-------------
 
+- ``$ mkdir -p ~/.vim/(backup|undo|swp)
 - ``$ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim``
 
 To install the Plugins afterwards run
@@ -25,7 +26,7 @@ Compile YCM components (MacOS X)
 --------------------------------
 
 #. ``$ cd ~/.vim/bundle/YouCompleteMe``
-#. ``$ ./install.sh --clang-completer --omnisharp-completer``
+#. ``$ ./install.py``
 
 reStructuredText support in vim Tagbar
 --------------------------------------

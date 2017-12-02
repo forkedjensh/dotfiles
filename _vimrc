@@ -36,6 +36,12 @@ let &t_8f = "\<Esc>[38:2:%lu:%lu:%lum"
 let &t_8b = "\<Esc>[48:2:%lu:%lu:%lum"
 set termguicolors
 
+" File locations
+" mkdir .vim/(backup|undo|swp)
+set undodir=~/.vim/undo//
+set backupdir=~/.vim/backup//
+set directory=~/.vim/swp//
+
 " The rest of your config follows here
 set backup
 set encoding=utf8
