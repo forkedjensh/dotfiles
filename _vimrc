@@ -106,7 +106,7 @@ nnoremap j gj
 nnoremap k gk
 
 " Other shortcuts
-inoremap jk <esc>
+inoremap jj <esc>
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 nnoremap <leader>tb :Tagbar<cr>
