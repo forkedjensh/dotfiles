@@ -135,9 +135,6 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='gruvbox'
 "let g:airline_solarized_bg='dark'
 
-" Syntastic
-let g:syntastic_always_populate_loc_list = 1
-
 " rst support in tagbar
 let g:tagbar_type_rst = {
     \ 'ctagstype': 'rst',
