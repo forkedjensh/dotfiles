@@ -163,3 +163,6 @@ autocmd Filetype gitcommit setlocal spell textwidth=72
 " ReST tables with vim-table-mode
 let g:table_mode_corner_corner="+"
 let g:table_mode_header_fillchar="="
+
+" In playbooks directories there are playbooks
+autocmd BufRead,BufNewFile */playbooks/*.yml set filetype=ansible
