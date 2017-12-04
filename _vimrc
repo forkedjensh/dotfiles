@@ -12,7 +12,6 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'kien/ctrlp.vim'
 Plugin 'dhruvasagar/vim-table-mode'
-Plugin 'Rykka/riv.vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'Valloric/YouCompleteMe'
@@ -24,6 +23,10 @@ Plugin 'tpope/vim-surround'
 Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'Yggdroot/indentLine'
+Plugin 'forkedjensh/plantuml-syntax'
+Plugin 'pearofducks/ansible-vim'
+Plugin 'Rykka/riv.vim'
+Plugin 'wannesm/wmgraphviz.vim'
 
 call vundle#end()
 
