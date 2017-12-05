@@ -15,7 +15,7 @@ Vim
 Prerequisites
 -------------
 
-- ``$ mkdir -p ~/.vim/(backup|undo|swp)``
+- ``$ mkdir -p ~/.vim/{backup,undo,swp}``
 - ``$ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim``
 
 To install the Plugins afterwards run

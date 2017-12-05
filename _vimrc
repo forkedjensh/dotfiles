@@ -4,25 +4,36 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+" vundle stuff
 Plugin 'gmarik/Vundle.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+
+" generic stuff
 Plugin 'kien/ctrlp.vim'
-Plugin 'dhruvasagar/vim-table-mode'
-Plugin 'SirVer/ultisnips'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'tpope/vim-vinegar'
+
+" autocomplete stuff
 Plugin 'honza/vim-snippets'
+Plugin 'SirVer/ultisnips'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'w0rp/ale'
+
+" programming stuff
+Plugin 'dhruvasagar/vim-table-mode'
+Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'majutsushi/tagbar'
+Plugin 'tpope/vim-fugitive'
+Plugin 'w0rp/ale'
+Plugin 'Yggdroot/indentLine'
+
+" colorschemes and layout stuff
 Plugin 'lifepillar/vim-solarized8'
 Plugin 'morhetz/gruvbox'
-Plugin 'tpope/vim-surround'
-Plugin 'jmcantrell/vim-virtualenv'
-Plugin 'tpope/vim-unimpaired'
-Plugin 'Yggdroot/indentLine'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
+" language specific stuff
 Plugin 'forkedjensh/plantuml-syntax'
 Plugin 'pearofducks/ansible-vim'
 Plugin 'Rykka/riv.vim'
@@ -31,6 +42,9 @@ Plugin 'wannesm/wmgraphviz.vim'
 call vundle#end()
 
 filetype plugin indent on
+
+" Include current directory and its subdirectories to vim's path
+set path+=**
 
 " Truecolour
 let &t_8f = "\<Esc>[38:2:%lu:%lu:%lum"
