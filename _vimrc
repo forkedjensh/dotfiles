@@ -30,8 +30,8 @@ Plugin 'Yggdroot/indentLine'
 " colorschemes and layout stuff
 Plugin 'lifepillar/vim-solarized8'
 Plugin 'morhetz/gruvbox'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+Plugin 'itchyny/lightline.vim'
+Plugin 'mgee/lightline-bufferline'
 
 " language specific stuff
 Plugin 'forkedjensh/plantuml-syntax'
@@ -72,7 +72,7 @@ set expandtab
 set encoding=utf-8
 set scrolloff=3
 set autoindent
-set showmode
+set noshowmode
 set showcmd
 set hidden
 set wildmenu
@@ -97,10 +97,11 @@ set formatoptions=qrn1
 set colorcolumn=80
 set list
 set listchars=tab:▸\ ,eol:¬
+set showtabline=2
 
 " Maps
 let mapleader = "ö"
-inoremap jj <esc>
+inoremap jk <esc>
 nnoremap / /\v
 nnoremap <leader><space> :noh<cr>
 nnoremap <leader>bn :bnext<CR>
@@ -117,6 +118,16 @@ noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 vnoremap / /\v
 vnoremap <tab> %
+nmap <leader>1 <Plug>lightline#bufferline#go(1)
+nmap <leader>2 <Plug>lightline#bufferline#go(2)
+nmap <leader>3 <Plug>lightline#bufferline#go(3)
+nmap <leader>4 <Plug>lightline#bufferline#go(4)
+nmap <leader>5 <Plug>lightline#bufferline#go(5)
+nmap <leader>6 <Plug>lightline#bufferline#go(6)
+nmap <leader>7 <Plug>lightline#bufferline#go(7)
+nmap <leader>8 <Plug>lightline#bufferline#go(8)
+nmap <leader>9 <Plug>lightline#bufferline#go(9)
+nmap <leader>0 <Plug>lightline#bufferline#go(10)
 
 " Autocmds
 autocmd FocusLost * :wa
@@ -128,10 +139,23 @@ let g:UltiSnipsExpandTrigger="<c-j>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
-" Airline
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='gruvbox'
+" Lightline
+let g:lightline = {
+      \ 'colorscheme': 'gruvbox',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'fugitive#head'
+      \ },
+      \ }
+let g:lightline#bufferline#show_number  = 1
+let g:lightline#bufferline#shorten_path = 0
+let g:lightline#bufferline#unnamed      = '[No Name]'
+let g:lightline.tabline          = {'left': [['buffers']], 'right': [['close']]}
+let g:lightline.component_expand = {'buffers': 'lightline#bufferline#buffers'}
+let g:lightline.component_type   = {'buffers': 'tabsel'}
 
 " rst support in tagbar
 let g:tagbar_type_rst = {
