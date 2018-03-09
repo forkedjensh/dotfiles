@@ -51,7 +51,7 @@ set path+=**
 let &t_8f = "\<Esc>[38:2:%lu:%lu:%lum"
 let &t_8b = "\<Esc>[48:2:%lu:%lu:%lum"
 set termguicolors
-set guifont=Monaco:h12
+" set guifont=Monaco:h12
 set background=dark
 colorscheme gruvbox
 
@@ -76,7 +76,6 @@ set noshowmode
 set showcmd
 set hidden
 set wildmenu
-set wildmode=list:longest
 set visualbell
 set cursorline
 set ttyfast
@@ -128,9 +127,23 @@ nmap <leader>7 <Plug>lightline#bufferline#go(7)
 nmap <leader>8 <Plug>lightline#bufferline#go(8)
 nmap <leader>9 <Plug>lightline#bufferline#go(9)
 nmap <leader>0 <Plug>lightline#bufferline#go(10)
+"" vim-impaired maps (german keyboard layout)
+nmap < ü
+nmap > +
+omap < ü
+omap > +
+xmap < ü
+xmap > +
+"" riv mappings (german keyboard layout)
+nmap < Ü
+nmap > *
+omap < Ü
+omap > *
+xmap < Ü
+xmap > *
 
 " Autocmds
-autocmd FocusLost * :wa
+" autocmd FocusLost * :wa
 autocmd Filetype gitcommit setlocal spell textwidth=72
 autocmd BufRead,BufNewFile */playbooks/*.yml set filetype=ansible
 
@@ -179,3 +192,10 @@ let g:ultisnips_python_style="sphinx"
 " ReST tables with vim-table-mode
 let g:table_mode_corner_corner="+"
 let g:table_mode_header_fillchar="="
+
+" rst maps
+autocmd filetype rst nnoremap <leader>h0 :RivTitle0<CR>
+autocmd filetype rst nnoremap <leader>h1 :RivTitle1<CR>
+autocmd filetype rst nnoremap <leader>h2 :RivTitle2<CR>
+autocmd filetype rst nnoremap <leader>h3 :RivTitle3<CR>
+autocmd filetype rst nnoremap <leader>h4 :RivTitle4<CR>
