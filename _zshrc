@@ -17,15 +17,6 @@ compinit
 
 PS1='%m:%~ %n$ '
 
-# enable virtualenvwrapper
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/develop
-source /usr/local/bin/virtualenvwrapper.sh
-
-# enable autoenv
-source /usr/local/opt/autoenv/activate.sh
-
 # diverse
 alias ls="ls -G"
 alias pip-upgrade-all="pip list --local --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 pip install -U"
@@ -33,3 +24,13 @@ alias pip-upgrade-all="pip list --local --outdated --format=freeze | grep -v '^\
 export PATH="$HOME/bin:/usr/local/sbin:$PATH"
 export EDITOR=/usr/local/bin/vim
 export VISUAL=/usr/local/bin/vim
+export PATH="/usr/local/opt/python@2/bin:$PATH"
+
+# enable virtualenvwrapper
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/opt/python@2/bin/python2/usr/local/opt/python@2/bin/python2//python2
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/develop
+source /usr/local/bin/virtualenvwrapper.sh
+
+# enable autoenv
+source /usr/local/opt/autoenv/activate.sh
