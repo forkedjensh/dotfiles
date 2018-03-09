@@ -128,19 +128,19 @@ nmap <leader>8 <Plug>lightline#bufferline#go(8)
 nmap <leader>9 <Plug>lightline#bufferline#go(9)
 nmap <leader>0 <Plug>lightline#bufferline#go(10)
 "" vim-impaired maps (german keyboard layout)
-nmap < ü
-nmap > +
-omap < ü
-omap > +
-xmap < ü
-xmap > +
+nmap ü [
+nmap ä ]
+omap ü [
+omap ä ]
+xmap ü [
+xmap ä ]
 "" riv mappings (german keyboard layout)
-nmap < Ü
-nmap > *
-omap < Ü
-omap > *
-xmap < Ü
-xmap > *
+nmap Ü {
+nmap Ä }
+omap Ü {
+omap Ä }
+xmap Ü {
+xmap Ä }
 
 " Autocmds
 " autocmd FocusLost * :wa
@@ -192,6 +192,10 @@ let g:ultisnips_python_style="sphinx"
 " ReST tables with vim-table-mode
 let g:table_mode_corner_corner="+"
 let g:table_mode_header_fillchar="="
+
+" Let ales populate the quickfix list
+let g:ale_set_loclist = 0
+let g:ale_set_quickfix = 1
 
 " rst maps
 autocmd filetype rst nnoremap <leader>h0 :RivTitle0<CR>
