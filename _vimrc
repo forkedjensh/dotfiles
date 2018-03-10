@@ -98,6 +98,11 @@ set list
 set listchars=tab:▸\ ,eol:¬
 set showtabline=2
 
+" MacVim/Gvim configuration
+if has("gui_running")
+   set guifont=Source\ Code\ Pro:h12
+endif
+
 " Maps
 let mapleader = "ö"
 inoremap jk <esc>
