@@ -59,6 +59,7 @@ if has("gui_running")
     else
         set guifont=Source\ Code\ Pro:h12
     endif
+    set guioptions-=e
 endif
 
 
