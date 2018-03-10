@@ -51,9 +51,16 @@ set path+=**
 let &t_8f = "\<Esc>[38:2:%lu:%lu:%lum"
 let &t_8b = "\<Esc>[48:2:%lu:%lu:%lum"
 set termguicolors
-" set guifont=Monaco:h12
 set background=dark
 colorscheme gruvbox
+if has("gui_running")
+    if(has("macunix"))
+        set guifont=Monaco:h12
+    else
+        set guifont=Source\ Code\ Pro:h12
+    endf
+endif
+
 
 " File locations
 " mkdir $HOME/.vim/{backup,undo,swp}
@@ -97,11 +104,6 @@ set colorcolumn=80
 set list
 set listchars=tab:▸\ ,eol:¬
 set showtabline=2
-
-" MacVim/Gvim configuration
-if has("gui_running")
-   set guifont=Source\ Code\ Pro:h12
-endif
 
 " Maps
 let mapleader = "ö"
