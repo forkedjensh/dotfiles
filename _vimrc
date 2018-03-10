@@ -58,7 +58,7 @@ if has("gui_running")
         set guifont=Monaco:h12
     else
         set guifont=Source\ Code\ Pro:h12
-    endf
+    endif
 endif
 
 

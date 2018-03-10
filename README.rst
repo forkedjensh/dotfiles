@@ -33,9 +33,3 @@ reStructuredText support in vim Tagbar
 
 Grab ``rst2ctags.py`` from `jszakmeister's Github Repo
 <https://github.com/jszakmeister/rst2ctags>`_ and copy it to  ``$HOME/bin``.
-
-Font "Monaco for Powerline" needed (MacOS X)
---------------------------------------------
-
-Get it here: `Patched font Monaco for OSX Vim-Powerline
-<https://gist.github.com/baopham/1838072>`_
