@@ -25,12 +25,6 @@ To install the Plugins afterwards run
 .. warning:: Expect errors for lightline on this. These are gone if you start
    vim afterwards.
 
-Compile YCM components (MacOS X)
---------------------------------
-
-#. ``$ cd ~/.vim/bundle/YouCompleteMe``
-#. ``$ ./install.py``
-
 reStructuredText support in vim Tagbar
 --------------------------------------
 

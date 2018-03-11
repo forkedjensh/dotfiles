@@ -17,7 +17,7 @@ Plugin 'tpope/vim-vinegar'
 " autocomplete stuff
 Plugin 'honza/vim-snippets'
 Plugin 'SirVer/ultisnips'
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'maralla/completor.vim'
 
 " programming stuff
 Plugin 'dhruvasagar/vim-table-mode'
@@ -222,3 +222,8 @@ autocmd filetype rst nnoremap <leader>h1 :RivTitle1<CR>
 autocmd filetype rst nnoremap <leader>h2 :RivTitle2<CR>
 autocmd filetype rst nnoremap <leader>h3 :RivTitle3<CR>
 autocmd filetype rst nnoremap <leader>h4 :RivTitle4<CR>
+
+" completor.vim complition with tab
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <cr> pumvisible() ? "\<C-y>\<cr>" : "\<cr>"
