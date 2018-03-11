@@ -52,7 +52,11 @@ let &t_8f = "\<Esc>[38:2:%lu:%lu:%lum"
 let &t_8b = "\<Esc>[48:2:%lu:%lu:%lum"
 set termguicolors
 set background=dark
-colorscheme gruvbox
+try
+    colorscheme gruvbox
+catch /E185/
+    colorscheme default
+endtry
 if has("gui_running")
     if(has("macunix"))
         set guifont=Monaco:h12
@@ -65,11 +69,17 @@ endif
 
 " File locations
 " mkdir $HOME/.vim/{backup,undo,swp}
-set undodir=~/.vim/undo//
-set backupdir=~/.vim/backup//
-set directory=~/.vim/swp//
+if filereadable('~/.vim/undo')
+    set undodir=~/.vim/undo//
+endif
+if filereadable('~/.vim/backup')
+    set backupdir=~/.vim/backup//
+endif
+if filereadable('~/.vim/swp')
+    set directory=~/.vim/swp//
+endif
 
-" The rest of your config follows here
+" Maps
 set backup
 set encoding=utf8
 set termencoding=utf8
@@ -125,6 +135,7 @@ noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 vnoremap / /\v
 vnoremap <tab> %
+"" lightline buffer maps
 nmap <leader>1 <Plug>lightline#bufferline#go(1)
 nmap <leader>2 <Plug>lightline#bufferline#go(2)
 nmap <leader>3 <Plug>lightline#bufferline#go(3)
