@@ -22,6 +22,9 @@ To install the Plugins afterwards run
 
 ``$ vim +PluginInstall +qall``
 
+.. warning:: Expect errors for lightline on this. These are gone if you start
+   vim afterwards.
+
 Compile YCM components (MacOS X)
 --------------------------------
 
