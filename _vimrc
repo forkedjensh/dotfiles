@@ -68,16 +68,9 @@ endif
 
 
 " File locations
-" mkdir $HOME/.vim/{backup,undo,swp}
-if filereadable('~/.vim/undo')
-    set undodir=~/.vim/undo//
-endif
-if filereadable('~/.vim/backup')
-    set backupdir=~/.vim/backup//
-endif
-if filereadable('~/.vim/swp')
-    set directory=~/.vim/swp//
-endif
+set undodir=~/.vim/undo//
+set backupdir=~/.vim/backup//
+set directory=~/.vim/swp//
 
 " Maps
 set backup
