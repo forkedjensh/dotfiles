@@ -1,46 +1,4 @@
 set nocompatible
-filetype off
-
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" vundle stuff
-Plugin 'gmarik/Vundle.vim'
-
-" generic stuff
-Plugin 'kien/ctrlp.vim'
-Plugin 'tpope/vim-commentary'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-unimpaired'
-Plugin 'tpope/vim-vinegar'
-
-" autocomplete stuff
-Plugin 'honza/vim-snippets'
-Plugin 'SirVer/ultisnips'
-Plugin 'maralla/completor.vim'
-
-" programming stuff
-Plugin 'dhruvasagar/vim-table-mode'
-Plugin 'jmcantrell/vim-virtualenv'
-Plugin 'majutsushi/tagbar'
-Plugin 'tpope/vim-fugitive'
-Plugin 'w0rp/ale'
-Plugin 'Yggdroot/indentLine'
-
-" colorschemes and layout stuff
-Plugin 'lifepillar/vim-solarized8'
-Plugin 'morhetz/gruvbox'
-Plugin 'itchyny/lightline.vim'
-Plugin 'mgee/lightline-bufferline'
-
-" language specific stuff
-Plugin 'forkedjensh/plantuml-syntax'
-Plugin 'pearofducks/ansible-vim'
-Plugin 'Rykka/riv.vim'
-Plugin 'wannesm/wmgraphviz.vim'
-
-call vundle#end()
-
 filetype plugin indent on
 syntax on
 
