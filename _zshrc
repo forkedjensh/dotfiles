@@ -5,7 +5,7 @@ SAVEHIST=1000
 bindkey -v
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/Users/jheidbuechel/.zshrc'
+zstyle :compinstall filename '~/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -24,11 +24,14 @@ alias pip-upgrade-all="pip list --local --outdated --format=freeze | grep -v '^\
 export PATH="$HOME/bin:/usr/local/sbin:$PATH"
 export EDITOR=/usr/local/bin/vim
 export VISUAL=/usr/local/bin/vim
-export PATH="/usr/local/opt/python@2/bin:$PATH"
+
+if which pyenv-virtualenv-init > /dev/null
+then
+    eval "$(pyenv virtualenv-init -)"
+fi
 
 # enable virtualenvwrapper
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/opt/python@2/bin/python2/usr/local/opt/python@2/bin/python2//python2
-export WORKON_HOME=$HOME/.virtualenvs
+export WORKON_HOME=$HOME/env
 export PROJECT_HOME=$HOME/develop
 source /usr/local/bin/virtualenvwrapper.sh
 
