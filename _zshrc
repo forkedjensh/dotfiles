@@ -25,11 +25,6 @@ export PATH="$HOME/bin:/usr/local/sbin:$PATH"
 export EDITOR=/usr/local/bin/vim
 export VISUAL=/usr/local/bin/vim
 
-if which pyenv-virtualenv-init > /dev/null
-then
-    eval "$(pyenv virtualenv-init -)"
-fi
-
 # enable virtualenvwrapper
 export WORKON_HOME=$HOME/env
 export PROJECT_HOME=$HOME/develop
