@@ -34,6 +34,3 @@ fi
 export WORKON_HOME=$HOME/env
 export PROJECT_HOME=$HOME/develop
 source /usr/local/bin/virtualenvwrapper.sh
-
-# enable autoenv
-source /usr/local/opt/autoenv/activate.sh
