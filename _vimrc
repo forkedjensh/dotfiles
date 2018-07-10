@@ -115,7 +115,7 @@ xmap Ä }
 " Autocmds
 " autocmd FocusLost * :wa
 autocmd Filetype gitcommit setlocal spell textwidth=72
-autocmd BufRead,BufNewFile */playbooks/*.yml set filetype=ansible
+autocmd BufRead,BufNewFile *.yml set filetype=yaml.ansible
 autocmd FileType python setlocal formatprg=autopep8\ -
 
 " Solve ycm ultisnips key mapping problem
