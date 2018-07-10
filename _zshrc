@@ -25,6 +25,9 @@ export PATH="$HOME/bin:/usr/local/sbin:$PATH"
 export EDITOR=/usr/local/bin/vim
 export VISUAL=/usr/local/bin/vim
 
+# default python for virtualenv
+export VIRTUALENV_PYTHON=/usr/local/bin/python3
+
 # enable virtualenvwrapper
 export WORKON_HOME=$HOME/env
 export PROJECT_HOME=$HOME/develop
