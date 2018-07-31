@@ -158,7 +158,7 @@ let g:tagbar_type_rst = {
 \ }
 
 "UltiSnips
-let g:ultisnips_python_style="sphinx"
+let g:ultisnips_python_style="numpy"
 
 " ReST tables with vim-table-mode
 let g:table_mode_corner_corner="+"
