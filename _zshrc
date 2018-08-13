@@ -17,7 +17,7 @@ compinit
 
 PS1='%m:%~ %n$ '
 
-# diverse
+# Diverse Aliase
 alias ls="ls -G"
 alias pip-upgrade-all="pip list --local --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 pip install -U"
 
@@ -25,10 +25,10 @@ export PATH="$HOME/bin:/usr/local/sbin:$PATH"
 export EDITOR=/usr/local/bin/vim
 export VISUAL=/usr/local/bin/vim
 
-# default python for virtualenv
-export VIRTUALENV_PYTHON=/usr/local/bin/python3
-
-# enable virtualenvwrapper
-export WORKON_HOME=$HOME/env
-export PROJECT_HOME=$HOME/develop
-source /usr/local/bin/virtualenvwrapper.sh
+# Enable pyenv with virtualenvs
+if command -v pyenv 1>/dev/null 2>&1; then
+    eval "$(pyenv init -)"
+fi
+if which pyenv-virtualenv-init > /dev/null; then
+    eval "$(pyenv virtualenv-init -)"
+fi
