@@ -87,12 +87,6 @@ noremap <C-l> <C-w>l
 vnoremap / /\v
 vnoremap <tab> %
 
-nnoremap <leader>cf :!say -v Yuri Der ßetti ist ne Fotze<cr><cr>
-nnoremap <leader>chf :!say -v Anna Der ßetti hat ne Fotze<cr><cr>
-nnoremap <leader>ck :!say -v Anna Der ßetti ist ein Kackboon<cr><cr>
-nnoremap <leader>cp :!say -v Anna Der ßetti ist ne Pussy<cr><cr>
-nnoremap <leader>kb :!say -v Anna Ich bin kein Kackboon<cr><cr>
-
 "" lightline buffer maps
 nmap <leader>1 <Plug>lightline#bufferline#go(1)
 nmap <leader>2 <Plug>lightline#bufferline#go(2)
