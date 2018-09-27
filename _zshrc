@@ -19,7 +19,8 @@ PS1='%m:%~ %n$ '
 
 # Diverse Aliase
 alias ls="ls -G"
-alias pip-upgrade-all="pip list --local --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 pip install -U"
+alias pipu="pip list --local --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 pip install -U"
+alias bru="brew update && brew upgrade && brew cask upgrade && brew cleanup"
 
 export PATH="$HOME/bin:/usr/local/sbin:$PATH"
 export EDITOR=/usr/local/bin/vim
