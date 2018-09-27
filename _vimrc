@@ -86,6 +86,13 @@ noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 vnoremap / /\v
 vnoremap <tab> %
+
+nnoremap <leader>cf :!say -v Yuri Der ßetti ist ne Fotze<cr><cr>
+nnoremap <leader>chf :!say -v Anna Der ßetti hat ne Fotze<cr><cr>
+nnoremap <leader>ck :!say -v Anna Der ßetti ist ein Kackboon<cr><cr>
+nnoremap <leader>cp :!say -v Anna Der ßetti ist ne Pussy<cr><cr>
+nnoremap <leader>kb :!say -v Anna Ich bin kein Kackboon<cr><cr>
+
 "" lightline buffer maps
 nmap <leader>1 <Plug>lightline#bufferline#go(1)
 nmap <leader>2 <Plug>lightline#bufferline#go(2)
@@ -116,7 +123,7 @@ xmap Ä }
 " autocmd FocusLost * :wa
 autocmd Filetype gitcommit setlocal spell textwidth=72
 autocmd BufRead,BufNewFile *.yml set filetype=yaml.ansible
-autocmd FileType python setlocal formatprg=autopep8\ -
+autocmd FileType python setlocal formatprg=autopep8\ -\ 2>\ /dev/null
 
 " Solve ycm ultisnips key mapping problem
 let g:UltiSnipsExpandTrigger="<c-j>"
